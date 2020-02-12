@@ -1,10 +1,11 @@
 import React from 'react';
-import App from './App.js';
+import ImageList from './ImageList.js';
 import renderer from 'react-test-renderer';
+import images from './data.js';
 
 it('header renders correctly', () => {
   const tree = renderer
-    .create(<App/>)
-    .toJSON();
+    .create(<ImageList images={images} />)
+    .toJSON();q
   expect(tree).toMatchSnapshot();
 });
