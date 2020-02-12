@@ -6,6 +6,6 @@ import images from './data.js';
 it('header renders correctly', () => {
   const tree = renderer
     .create(<ImageList images={images} />)
-    .toJSON();q
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });

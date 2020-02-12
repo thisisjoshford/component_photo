@@ -7,6 +7,73 @@ exports[`header renders correctly 1`] = `
       This is the unicorn site yo!
     </h1>
   </div>
+  <div>
+    <select
+      className="unicornFilter"
+      onChange={[Function]}
+    >
+      <option
+        defaultValue={true}
+        value="narwhal"
+      >
+        Narwhal
+      </option>
+      <option
+        defaultValue={true}
+        value="rhino"
+      >
+        Rhino
+      </option>
+      <option
+        defaultValue={true}
+        value="unicorn"
+      >
+        Unicorn
+      </option>
+      <option
+        defaultValue={true}
+        value="unilego"
+      >
+        UniLego
+      </option>
+      <option
+        defaultValue={true}
+        value="triceratops"
+      >
+        triceratops
+      </option>
+      <option
+        defaultValue={true}
+        value="mouflon"
+      >
+        Mouflon
+      </option>
+      <option
+        defaultValue={true}
+        value="addax"
+      >
+        Addax
+      </option>
+      <option
+        defaultValue={true}
+        value="chameleon"
+      >
+        Chameleon
+      </option>
+      <option
+        defaultValue={true}
+        value="lizard"
+      >
+        Lizard
+      </option>
+      <option
+        defaultValue={true}
+        value="dragon"
+      >
+        Dragon
+      </option>
+    </select>
+  </div>
   <ul>
     <li
       className="imageContainer"
