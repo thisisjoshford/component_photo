@@ -1,0 +1,12 @@
+img {
+    max-width: 200px;
+}
+ul {
+    list-style-type: none;
+}
+
+.imageContainer {
+    display: inline;
+    margin-left: 10px;
+    margin-top: 10px;
+}
