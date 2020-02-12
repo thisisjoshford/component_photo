@@ -14,6 +14,12 @@ export default class App extends Component {
     const filteredImages = images.filter(image => {
       if (!this.state.selected) return true;
       return image.keyword === this.state.selected; });
+
+    const filteredHorns = images.filter(image => {
+      if(!this.state.selected) return true;
+      const state = parseInt(this.state.selected)
+      return image.horns === state });
+
     return (
       <div>
         <Header/>
@@ -32,7 +38,15 @@ export default class App extends Component {
            </select>
         </div>
         <ImageList images={filteredImages}/>
+        <div>
+          <select className="unicornFilter" onChange={handleChange}>
+            <option value="1" defaultValue>1</option>
+            <option value="2" defaultValue>2</option>
+            <option value="100" defaultValue>100</option>
+          </select>
       </div>
+        <ImageList images={filteredHorns}/>
+ </div>
     )
   }
 }
