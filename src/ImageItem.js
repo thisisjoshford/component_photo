@@ -7,7 +7,7 @@ export default class ImageItem extends Component {
         const imageArray = this.props.images
         const imageElements = imageArray.map((object, i) => {
         return <li className="imageContainer" key={i}>
-            <img src={object.url} alt={object.title}/>
+            <img className="pokeImage" src={object.url} alt={object.title}/>
         </li>
         });
         return(

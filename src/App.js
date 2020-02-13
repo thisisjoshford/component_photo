@@ -4,12 +4,16 @@ import ImageList from './ImageList.js'
 import images from './data.js'
 import request from 'superagent';
 
-
 import './App.css';
 
 export default class App extends Component {
   
-  state = { selected: null};
+  state = { selected: null,
+    horns: null,
+    cute: null,
+    type: null
+
+  }
   render(){
     const handleChange = e => {
       this.setState({ selected: e.target.value});
@@ -26,6 +30,12 @@ export default class App extends Component {
     return (
       <div>
         <Header/>
+        <div>
+        <select className="unicornFilter" onChange={handleChange}>
+            <option value="true" defaultValue>cute</option>
+            <option value="false" defaultValue>not so cute</option>
+          </select>
+        </div>
         <div>
            <select className="unicornFilter" onChange={handleChange}>
              <option value="narwhal" defaultValue>Narwhal</option>

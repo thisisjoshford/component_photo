@@ -6,7 +6,12 @@ ul {
 }
 
 .imageContainer {
-    display: inline;
+    display: inline-grid;
+    vertical-align: middle;
     margin-left: 10px;
     margin-top: 10px;
+    border: solid 2px purple;
+    border-radius: 7%;
+    padding: .3em;
+    box-shadow: 5px 7px #888888;
 }
