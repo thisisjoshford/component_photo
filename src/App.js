@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import Header from './Header.js'
 import ImageList from './ImageList.js'
 import images from './data.js'
+import request from 'superagent';
+
 
 import './App.css';
 
 export default class App extends Component {
+  
   state = { selected: null};
   render(){
     const handleChange = e => {
@@ -36,15 +39,15 @@ export default class App extends Component {
              <option value="lizard" defaultValue>Lizard</option>
              <option value="dragon" defaultValue>Dragon</option>
            </select>
-        </div>
-        <ImageList images={filteredImages}/>
         <div>
           <select className="unicornFilter" onChange={handleChange}>
             <option value="1" defaultValue>1</option>
             <option value="2" defaultValue>2</option>
             <option value="100" defaultValue>100</option>
           </select>
-      </div>
+        </div>
+        </div>
+        <ImageList images={filteredImages}/>
         <ImageList images={filteredHorns}/>
  </div>
     )
