@@ -1,0 +1,12 @@
+.filters {
+    text-align: center;
+}
+.unicornFilter{
+    display: inline-grid;
+    margin-left: 10px;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
