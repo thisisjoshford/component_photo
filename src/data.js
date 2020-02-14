@@ -6,7 +6,7 @@ const images = [
       description: "A unicorn and a narwhal nuzzling their horns",
       keyword: "narwhal",
       horns: 1,
-      cute: true,
+      cute: "true",
       type: "illustration"
     },
     {
@@ -16,7 +16,7 @@ const images = [
       description: "Mother (or father) rhino with two babies",
       keyword: "rhino",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -26,7 +26,7 @@ const images = [
       description: "Someone wearing a creepy unicorn head mask",
       keyword: "unicorn",
       horns: 1,
-      cute: false,
+      cute: "false",
       type: "photo"
     },
     {
@@ -36,6 +36,7 @@ const images = [
       description: "Lego figurine dressed in a unicorn outfit",
       keyword: "unilego",
       horns: 1,
+      cute: "true",
       type: "photo"
     },
     {
@@ -45,7 +46,7 @@ const images = [
       description: "A narwhal is basically a unicorn after all, right?",
       keyword: "narwhal",
       horns: 1,
-      cute: true,
+      cute: "true",
       type: "illustration"
     },
     {
@@ -55,7 +56,7 @@ const images = [
       description: "The truth behind narwhals",
       keyword: "narwhal",
       horns: 1,
-      cute: false,
+      cute: "false",
       type: "illustration"
     },
     {
@@ -65,7 +66,7 @@ const images = [
       description: "This is actually a figurine but it looks kinda real",
       keyword: "rhino",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -76,7 +77,7 @@ const images = [
         "Three horns but still, horns. And who doesn't like The Land Before Time?",
       keyword: "triceratops",
       horns: 3,
-      cute: true,
+      cute: "true",
       type: "illustration"
     },
     {
@@ -86,7 +87,7 @@ const images = [
       description: "A woman wearing a blue narwhal costume",
       keyword: "narwhal",
       horns: 1,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -95,7 +96,7 @@ const images = [
       description: "Mascots have to get their costumes somewhere",
       keyword: "rhino",
       horns: 2,
-      cute: false,
+      cute: "false",
       type: "photo"
     },
     {
@@ -105,7 +106,7 @@ const images = [
       description: "I believe in unicorns, do you?",
       keyword: "unicorn",
       horns: 1,
-      cute: true,
+      cute: "true",
       type: "illustration"
     },
     {
@@ -116,7 +117,7 @@ const images = [
         "These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?",
       keyword: "markhor",
       horns: 2,
-      cute: false,
+      cute: "false",
       type: "photo"
     },
     {
@@ -125,7 +126,7 @@ const images = [
       description: "Even the babies are adorable",
       keyword: "markhor",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -135,7 +136,7 @@ const images = [
       description: "Those horns though",
       keyword: "mouflon",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -145,7 +146,7 @@ const images = [
         "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
       keyword: "addax",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -155,7 +156,7 @@ const images = [
       description: "The cuteness that is a baby mouflon asleep",
       keyword: "mouflon",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -165,7 +166,7 @@ const images = [
       description: "These are really common in Hawaii",
       keyword: "chameleon",
       horns: 2,
-      cute: true,
+      cute: "true",
       type: "photo"
     },
     {
@@ -175,7 +176,7 @@ const images = [
       description: "This one is very serious.",
       keyword: "chameleon",
       horns: 3,
-      cute: false,
+      cute: "false",
       type: "photo"
     },
     {
@@ -185,7 +186,7 @@ const images = [
       description: "Fave food: ants",
       keyword: "lizard",
       horns: 100, 
-      cute: false,
+      cute: "false",
       type: "photo"
     },
     {
@@ -195,7 +196,7 @@ const images = [
       description: "Fan illustration of Smaug from 'The Hobbit'",
       keyword: "dragon",
       horns: 100,
-      cute: false,
+      cute: "false",
       type: "illustration"
     }
   ];

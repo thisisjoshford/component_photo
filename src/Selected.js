@@ -4,6 +4,8 @@ import './Selected.css';
 export default class Selected extends Component {
 
     render() {
+        
+      
 
        return(
 
@@ -13,6 +15,7 @@ export default class Selected extends Component {
 
                 <div className="unicornFilter">      
                     <select className="unicornFilter" onChange={this.props.handleChangeCallback}>
+                        <option value="" defaultValue>ALL</option>
                         <option value="narwhal" defaultValue>Narwhal</option>
                         <option value="rhino" defaultValue>Rhino</option>
                         <option value="unicorn" defaultValue>Unicorn</option>
@@ -36,6 +39,12 @@ export default class Selected extends Component {
                         <option value="1" defaultValue>1</option>
                         <option value="2" defaultValue>2</option>
                         <option value="100" defaultValue>100</option>
+                    </select>
+                </div>
+                <div className="unicornFilter">
+                    <select className="unicornFilter" onChange={this.props.typeChange}>
+                        <option value="illustration" defaultValue>illustration</option>
+                        <option value="photo" defaultValue>photo</option>
                     </select>
                 </div>
             </div>

@@ -26,16 +26,34 @@ export default class App extends Component {
     const cuteChange = e => {
       this.setState({ cute: e.target.value});
     };
-    const filteredImages = images.filter(image => {
+    const typeChange = e => {
+      this.setState({ type: e.target.value});
+    };
+
+    
+    //filter names
+    const filter1 = images.filter(image => {
       if (!this.state.selected) return true;
       return image.keyword === this.state.selected; });
+    //filter horns
+    const filter2 = filter1.filter(image =>{
+      if(!this.state.horns) return true;
+      return image.horns === parseInt(this.state.horns);});
+    //filter cute
+    const filter3 = filter2.filter(image =>{
+      if(!this.state.cute) return true;
+      return image.cute === this.state.cute;});
+    //filter photo(type)
+    const filter4 = filter3.filter(image =>{
+      if(!this.state.type) return true;
+      return image.type === this.state.type;});
 
 
     return (
     <div>
         <Header/>
-        <Selected hornChange={hornChange} cuteChange={cuteChange} handleChangeCallback={handleChange} images={images}/>
-        <ImageList images={filteredImages}/>
+        <Selected hornChange={hornChange} cuteChange={cuteChange} handleChangeCallback={handleChange} typeChange={typeChange} images={images}/>
+        <ImageList images={filter4}/>
     </div>
     )
   }
